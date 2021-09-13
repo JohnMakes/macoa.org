@@ -1,0 +1,44 @@
+//Imports
+@import "./variables";
+@import "./header";
+//Mixins
+
+// Base Styles
+body {
+    box-sizing: border-box;
+    font: $fontSerif;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: $light;
+    text-decoration: none;
+    &:hover {color: $primaryBtn;}
+}
+button {
+    color: $light;
+    background: $primaryBtn;
+    &:hover {
+        background-color: $donateBtn;
+    }
+    &.donate{
+        background-color: $donateBtn;
+        &:hover {
+            background-color: $primaryBtn;
+        }
+    }
+    &:focus {
+        background-color: black;
+    }
+    border: none;
+    border-radius: 10%;
+    padding: 1em;
+    text-align: center;
+}
+
+
+
+section {
+    padding-top: 10vh;
+}

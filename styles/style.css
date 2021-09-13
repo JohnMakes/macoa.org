@@ -1,0 +1,74 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header ul li::after {
+  content: "|";
+  color: #fcfcfc;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: 1em ltc-goudy-oldstyle-pro, serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #014693;
+}
+
+button {
+  color: #fcfcfc;
+  background: #014693;
+  border: none;
+  border-radius: 10%;
+  padding: 1em;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #FF4D00;
+}
+
+button.donate {
+  background-color: #FF4D00;
+}
+
+button.donate:hover {
+  background-color: #014693;
+}
+
+button:focus {
+  background-color: black;
+}
+
+section {
+  padding-top: 10vh;
+}
+/*# sourceMappingURL=style.css.map */
