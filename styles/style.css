@@ -12,16 +12,59 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background: grey;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  padding: 1em 0;
+}
+
+header h1 {
+  display: inline-block;
+  letter-spacing: normal;
+  text-indent: -990em;
+  overflow: hidden;
+  background: url("../assets/logo-text.svg") no-repeat center;
+}
+
+header a {
+  padding: 0 1em;
+}
+
+header ul li {
+  display: inline-block;
 }
 
 header ul li::after {
   content: "|";
   color: #fcfcfc;
+}
+
+header ul li:last-of-type::after {
+  content: "";
+}
+
+header .social a {
+  margin: 0 1em;
+}
+
+header .social a.insta {
+  display: inline-block;
+  letter-spacing: normal;
+  text-indent: -990em;
+  overflow: hidden;
+  background: url("../assets/insta.svg") no-repeat center;
+}
+
+header .social a.fb {
+  display: inline-block;
+  letter-spacing: normal;
+  text-indent: -990em;
+  overflow: hidden;
+  background: url("../assets/fb.svg") no-repeat center;
 }
 
 body {
@@ -32,6 +75,7 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 a {
