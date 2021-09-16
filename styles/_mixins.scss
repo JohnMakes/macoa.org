@@ -1,0 +1,16 @@
+//Mixins
+@mixin flexCenter($justify, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+    flex-wrap: nowrap;
+
+}
+@mixin imageReplace ($image) {
+    display: inline-block;
+    letter-spacing: normal;
+    text-indent: -990em;
+    overflow: hidden;
+    background: url($image) no-repeat center;
+}

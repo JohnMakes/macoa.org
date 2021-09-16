@@ -1,7 +1,8 @@
 //Imports
 @import "./variables";
+@import "./mixins";
 
-//
+//Slider Styles
 .slider {
     height: 60vh;
     .slide {
@@ -13,7 +14,21 @@
         background-position: center;;
         background-image: url(/assets/images/slider-hands.jpg);
         .content {
+            color: $light;
             text-align: center;
+            h3 {}
+            p {
+                font-size-adjust: 0.5em;
+            }
         }
+    }
+}
+//Impact Styles
+section.impact {
+    @include flexCenter(space-around, row);
+    text-align: center;
+    font-size: 1.5em;
+    .div {
+        width: 30%;
     }
 }

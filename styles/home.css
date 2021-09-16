@@ -20,6 +20,34 @@
 }
 
 .slider .slide .content {
+  color: #fcfcfc;
   text-align: center;
+}
+
+.slider .slide .content p {
+  font-size-adjust: 0.5em;
+}
+
+section.impact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+section.impact .div {
+  width: 30%;
 }
 /*# sourceMappingURL=home.css.map */
