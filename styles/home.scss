@@ -16,7 +16,6 @@
         .content {
             color: $light;
             text-align: center;
-            h3 {}
             p {
                 font-size-adjust: 0.5em;
             }
@@ -30,5 +29,8 @@ section.impact {
     font-size: 1.5em;
     .div {
         width: 30%;
+        strong {
+            font-size: 1.5em;
+        }
     }
 }

@@ -5,18 +5,6 @@ header {
   width: 100%;
 }
 
-header .tagline {
-  text-align: center;
-  color: #fcfcfc;
-  padding: 1em;
-  line-height: 1em;
-  background-color: #014693;
-}
-
-header .tagline p {
-  margin-bottom: 0;
-}
-
 header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,48 +39,11 @@ header .navigation h1 {
   width: 2em;
 }
 
-header .navigation a {
-  padding: 0 1em;
-}
-
-header .navigation ul li {
-  display: inline-block;
-}
-
-header .navigation ul li::after {
-  content: "|";
-  color: black;
-}
-
-header .navigation ul li:last-of-type::after {
-  content: "";
-}
-
-header .navigation .social a {
-  margin: 0 1em;
-}
-
-header .navigation .social a.insta {
-  display: inline-block;
-  letter-spacing: normal;
-  text-indent: -990em;
-  overflow: hidden;
-  background: url("../assets/insta.svg") no-repeat center;
-}
-
-header .navigation .social a.fb {
-  display: inline-block;
-  letter-spacing: normal;
-  text-indent: -990em;
-  overflow: hidden;
-  background: url("../assets/fb.svg") no-repeat center;
-}
-
 body {
   padding-top: 15vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font: 1em ltc-goudy-oldstyle-pro, serif;
+  font: 16px ltc-goudy-oldstyle-pro, serif;
 }
 
 ul {
@@ -101,12 +52,12 @@ ul {
 }
 
 a {
-  color: black;
+  color: #202D4D !important;
   text-decoration: none;
 }
 
 a:hover {
-  color: #014693;
+  color: #014693 !important;
 }
 
 button {
@@ -134,7 +85,98 @@ button:focus {
   background-color: black;
 }
 
+nav a {
+  padding: 0 1em;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li::after {
+  content: "|";
+  color: black;
+}
+
+nav ul li:last-of-type::after {
+  content: "";
+}
+
+.social {
+  line-height: 1em;
+}
+
+.social a {
+  margin: 0 1em;
+  width: 1em;
+  line-height: 1em;
+}
+
+.social a.insta {
+  display: inline-block;
+  letter-spacing: normal;
+  text-indent: -990em;
+  overflow: hidden;
+  background: url("../assets/insta.svg") no-repeat center;
+}
+
+.social a.fb {
+  display: inline-block;
+  letter-spacing: normal;
+  text-indent: -990em;
+  overflow: hidden;
+  background: url("../assets/fb.svg") no-repeat center;
+}
+
 section {
   padding-top: 10vh;
+}
+
+.tagline {
+  text-align: center;
+  color: #fcfcfc;
+  padding: 1em;
+  line-height: 1em;
+  background-color: #014693;
+}
+
+.tagline p {
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+footer nav {
+  margin: 1em 0;
+}
+
+footer nav button, footer nav ul {
+  display: inline-block;
+}
+
+footer div {
+  color: #202D4D;
+  font: 16px aileron, sans-serif;
+  font-weight: 300;
+  background-color: #d9d7d7;
+  padding: 2em 0;
+  text-transform: uppercase;
+}
+
+footer div p a {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+footer div p a::before {
+  content: "|";
+  color: black;
+  padding-right: 2em;
+}
+
+footer div p:last-of-type {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

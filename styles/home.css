@@ -50,4 +50,8 @@ section.impact {
 section.impact .div {
   width: 30%;
 }
+
+section.impact .div strong {
+  font-size: 1.5em;
+}
 /*# sourceMappingURL=home.css.map */
