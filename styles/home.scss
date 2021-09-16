@@ -5,6 +5,7 @@
 //Slider Styles
 .slider {
     height: 60vh;
+    max-height: 545px;
     .slide {
         display: flex;
         flex-direction: column;
@@ -12,7 +13,7 @@
         height: 100%;
         background-size: cover;
         background-position: center;;
-        background-image: url(/assets/images/slider-hands.jpg);
+        background-image: url(/assets/images/slider1.jpg);
         .content {
             color: $light;
             text-align: center;

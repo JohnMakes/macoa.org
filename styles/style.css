@@ -65,7 +65,7 @@ button {
   background: #014693;
   border: none;
   border-radius: 10%;
-  padding: 0.65em 1em;
+  padding: 0.65em 1.25em;
   text-align: center;
 }
 
@@ -146,6 +146,7 @@ section {
 
 footer {
   text-align: center;
+  margin-top: 4em;
 }
 
 footer nav {
@@ -156,7 +157,11 @@ footer nav button, footer nav ul {
   display: inline-block;
 }
 
-footer div {
+footer .social {
+  display: inline-block;
+}
+
+footer .contact {
   color: #202D4D;
   font: 16px aileron, sans-serif;
   font-weight: 300;
@@ -165,18 +170,18 @@ footer div {
   text-transform: uppercase;
 }
 
-footer div p a {
+footer .contact p a {
   display: inline-block;
   margin-left: 1em;
 }
 
-footer div p a::before {
+footer .contact p a::before {
   content: "|";
   color: black;
   padding-right: 2em;
 }
 
-footer div p:last-of-type {
+footer .contact p:last-of-type {
   margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

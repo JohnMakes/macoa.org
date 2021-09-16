@@ -35,7 +35,7 @@ button {
     }
     border: none;
     border-radius: 10%;
-    padding: 0.65em 1em;
+    padding: 0.65em 1.25em;
     text-align: center;
 }
 nav {   
@@ -80,11 +80,15 @@ section {
 }
 footer {
     text-align: center;
+    margin-top: 4em;
     nav {
         margin: 1em 0;
         button, ul {display: inline-block;}
     }
-    div {
+    .social {
+        display: inline-block;
+    }
+    .contact {
         color: $blueGrey;
         font: $fontSans;
         font-weight: 300;
