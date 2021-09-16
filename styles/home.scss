@@ -1,0 +1,13 @@
+//Imports
+@import "./variables";
+
+//
+.slider {
+    height: 60vh;
+    div {
+        height: 100%;
+        background-size: cover;
+        background-position: center;;
+        background-image: url(/assets/images/slider-hands.jpg);
+    }
+}

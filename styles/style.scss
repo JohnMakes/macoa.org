@@ -5,6 +5,7 @@
 
 // Base Styles
 body {
+    padding-top: 15vh;
     box-sizing: border-box;
     font: $fontSerif;
 }
@@ -13,20 +14,20 @@ ul {
     margin: 0;
 }
 a {
-    color: $light;
+    color: $textColor;
     text-decoration: none;
-    &:hover {color: $primaryBtn;}
+    &:hover {color: $primaryBlue;}
 }
 button {
     color: $light;
-    background: $primaryBtn;
+    background: $primaryBlue;
     &:hover {
         background-color: $donateBtn;
     }
     &.donate{
         background-color: $donateBtn;
         &:hover {
-            background-color: $primaryBtn;
+            background-color: $primaryBlue;
         }
     }
     &:focus {
@@ -34,12 +35,9 @@ button {
     }
     border: none;
     border-radius: 10%;
-    padding: 1em;
+    padding: 0.65em 1em;
     text-align: center;
 }
-
-
-
 section {
     padding-top: 10vh;
 }

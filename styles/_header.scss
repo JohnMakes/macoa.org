@@ -15,36 +15,52 @@
     background: url($image) no-repeat center;
 }
 header {
-    @include flexCenter(center, row);
-    background: grey;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1em 0;
-    h1 {
-        @include imageReplace("../assets/logo-text.svg");
-        
+    .tagline {
+        text-align: center;
+        color: $light;
+        padding: 1em;
+        line-height: 1em;
+        background-color: $primaryBlue;
+        p {
+            margin-bottom: 0;
+        }
     }
-    a {padding: 0 1em;}
-    ul {
-        li {
-            display: inline-block;
-            &::after {
-                content: "|";
-                color: $light;
+    .navigation {
+        @include flexCenter(center, row);
+        background: $light;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1em 0;
+        h1 {
+            display: block;
+            @include imageReplace("../assets/logo-text.svg");
+            height: 2em;
+            width: 2em;
+        }
+        a {padding: 0 1em;}
+        ul {
+            li {
+                display: inline-block;
+                &::after {
+                    content: "|";
+                    color: $textColor;
+                }
+                &:last-of-type::after {content: "";}
             }
-            &:last-of-type::after {content: "";}
+        }
+        .social a {
+            margin: 0 1em;
+            &.insta {
+                @include imageReplace("../assets/insta.svg");
+            }
+            &.fb {
+                @include imageReplace("../assets/fb.svg");
+            }
         }
     }
-    .social a {
-        margin: 0 1em;
-        &.insta {
-            @include imageReplace("../assets/insta.svg");
-        }
-        &.fb {
-            @include imageReplace("../assets/fb.svg");
-        }
-    }
-
 }
