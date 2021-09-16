@@ -4,10 +4,16 @@
 //
 .slider {
     height: 60vh;
-    div {
+    .slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 100%;
         background-size: cover;
         background-position: center;;
         background-image: url(/assets/images/slider-hands.jpg);
+        .content {
+            text-align: center;
+        }
     }
 }
