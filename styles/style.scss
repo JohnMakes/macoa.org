@@ -21,6 +21,7 @@ a {
 button {
     color: $light;
     background: $primaryBlue;
+    flex-grow: 0;
     &:hover {
         background-color: $donateBtn;
     }
@@ -29,6 +30,10 @@ button {
         &:hover {
             background-color: $primaryBlue;
         }
+    }
+    &.light {
+        color: $blueGrey;
+        background-color: $light;
     }
     &:focus {
         background-color: black;
@@ -65,9 +70,6 @@ nav {
         }
     }
 }
-section {
-    padding-top: 10vh;
-}
 .tagline {
     text-align: center;
     color: $light;
@@ -76,6 +78,21 @@ section {
     background-color: $primaryBlue;
     p {
         margin-bottom: 0;
+    }
+}
+.half {
+    @include flexCenter(stretch, row);
+    align-items: stretch;
+    img {
+        width: 50%;
+    }
+    .content {
+        @include flexCenter(center, column);
+        align-items: flex-start;
+        width: 50%;
+        padding-left: 3em;
+        color: $light;
+        background-color: $primaryBlue;
     }
 }
 footer {
