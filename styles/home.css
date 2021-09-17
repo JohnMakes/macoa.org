@@ -30,6 +30,16 @@
 }
 
 section.impact {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 2em 0;
+}
+
+section.impact h3 {
+  margin-bottom: 1.5em;
+}
+
+section.impact .stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,15 +54,17 @@ section.impact {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  text-align: center;
-  font-size: 1.5em;
 }
 
-section.impact .div {
+section.impact .stats .div {
   width: 30%;
 }
 
-section.impact strong {
+section.impact .stats p {
+  margin-top: 1em;
+}
+
+section.impact .stats strong {
   font-size: 1.5em;
   font-weight: bold;
   color: #014693;

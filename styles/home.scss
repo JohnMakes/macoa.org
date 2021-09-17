@@ -25,15 +25,20 @@
 }
 //Impact Styles
 section.impact {
-    @include flexCenter(space-around, row);
     text-align: center;
     font-size: 1.5em;
-    .div {
-        width: 30%;
-    }
-    strong {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: $primaryBlue;
+    padding: 2em 0;
+    h3 {margin-bottom: 1.5em;}
+    .stats {
+        @include flexCenter(space-around, row);
+        .div {
+            width: 30%;
+        }
+        p {margin-top: 1em;} 
+        strong {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $primaryBlue;
+        }
     }
 }
