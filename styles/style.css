@@ -169,8 +169,10 @@ nav ul li:last-of-type::after {
           align-items: stretch;
 }
 
-.half img {
+.half img, .half .image {
   width: 50%;
+  background-size: cover;
+  background-position: center;
 }
 
 .half .content {
@@ -193,9 +195,14 @@ nav ul li:last-of-type::after {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 50%;
-  padding-left: 3em;
+  padding: 3em 5em;
   color: #fcfcfc;
   background-color: #014693;
+}
+
+.half .content p {
+  font: 16px aileron, sans-serif;
+  line-height: 1.5em;
 }
 
 footer {
