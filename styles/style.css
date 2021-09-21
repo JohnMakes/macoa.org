@@ -22,6 +22,8 @@ header .navigation {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background: #fcfcfc;
+  text-align: center;
+  font: 16px aileron, sans-serif;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,6 +39,15 @@ header .navigation h1 {
   background: url("../assets/logo-text.svg") no-repeat center;
   height: 2em;
   width: 2em;
+  margin-right: 0.5em;
+}
+
+header .navigation nav ul {
+  padding-left: 0;
+}
+
+header .navigation button {
+  margin-left: 1em;
 }
 
 body {
