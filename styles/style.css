@@ -71,6 +71,13 @@ a:hover {
   color: #014693 !important;
 }
 
+button {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .btn {
   color: #fcfcfc;
   background: #014693;
@@ -102,6 +109,13 @@ a:hover {
 
 .btn:focus {
   background-color: black;
+}
+
+.ham {
+  width: 2em;
+  height: 0.2em;
+  border-radius: 5px;
+  background-color: #202D4D;
 }
 
 nav a {
