@@ -21,11 +21,18 @@
     <script>
         function toggleActive() {
             var button = document.getElementById("ham");
+            var nav = document.querySelector("nav");
             if(button.classList.contains("is-active")) {
                 button.classList.remove("is-active");
             }
             else {
                 button.classList.add("is-active");
+            }
+            if(nav.classList.contains("is-active")) {
+                nav.classList.remove("is-active");
+            }
+            else {
+                nav.classList.add("is-active");
             }
         }
     </script>
