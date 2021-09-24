@@ -1881,9 +1881,7 @@ a:hover {
 
 button {
   border: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -1893,7 +1891,7 @@ button {
       -ms-flex-positive: 0;
           flex-grow: 0;
   border: none;
-  border-radius: 10%;
+  border-radius: 5px;
   padding: 0.65em 1.25em;
   text-align: center;
 }
@@ -1971,7 +1969,7 @@ nav ul li:last-of-type::after {
 }
 
 .tagline p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .half {

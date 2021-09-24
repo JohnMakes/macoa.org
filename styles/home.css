@@ -23,10 +23,15 @@
 .slider .slide .content {
   color: #fcfcfc;
   text-align: center;
+  font-size: 3vh;
 }
 
 .slider .slide .content p {
   font-size-adjust: 0.5em;
+}
+
+.slider .slide .content button {
+  font-size: 1rem;
 }
 
 section.impact {
