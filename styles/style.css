@@ -71,7 +71,7 @@ a:hover {
   color: #014693 !important;
 }
 
-button {
+.btn {
   color: #fcfcfc;
   background: #014693;
   -webkit-box-flex: 0;
@@ -83,24 +83,24 @@ button {
   text-align: center;
 }
 
-button:hover {
+.btn:hover {
   background-color: #FF4D00;
 }
 
-button.donate {
+.btn.donate {
   background-color: #FF4D00;
 }
 
-button.donate:hover {
+.btn.donate:hover {
   background-color: #014693;
 }
 
-button.light {
+.btn.light {
   color: #202D4D;
   background-color: #fcfcfc;
 }
 
-button:focus {
+.btn:focus {
   background-color: black;
 }
 

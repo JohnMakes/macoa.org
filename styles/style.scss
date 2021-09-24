@@ -18,7 +18,7 @@ a {
     text-decoration: none;
     &:hover {color: $primaryBlue !important;}
 }
-button {
+.btn {
     color: $light;
     background: $primaryBlue;
     flex-grow: 0;
@@ -43,6 +43,7 @@ button {
     padding: 0.65em 1.25em;
     text-align: center;
 }
+// Navigation
 nav {   
     a {padding: 0 1em;}
     ul {
