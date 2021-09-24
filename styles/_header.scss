@@ -13,8 +13,7 @@ header {
         font: $fontSans;
         top: 0;
         left: 0;
-        width: 100%;
-        padding: 1em 2em;
+        padding: 0 4em;
         h1 {
             display: block;
             @include imageReplace("../assets/logo-text.svg");
@@ -22,14 +21,19 @@ header {
             width: 2em;
             margin-right: 0.5em;
         }
-        nav ul {
-            padding-left: 0;
+        nav {
+            display: none;
+            ul {
+                padding-left: 0;
+            }
         }
+        .social {display: none;}
         button {
             margin-left: 1em;
+        }    
+        @include for-size(tablet-landscape-up) {
+            #ham {display: none;}
+            nav, .social {display: inline-block;}
         }
-    }
-    @include for-size(phone-only) {
-        .navigation ul {display: none;}
     }
 }
