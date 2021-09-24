@@ -29,4 +29,7 @@ header {
             margin-left: 1em;
         }
     }
+    @include for-size(phone-only) {
+        .navigation ul {display: none;}
+    }
 }
