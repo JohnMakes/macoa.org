@@ -25,7 +25,7 @@ header {
             display: none;
             position: fixed;
             opacity: 0;
-            transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            transition: opacity ease-in-out;
             top: 0;
             left: 0;
             right: 0;
@@ -35,8 +35,23 @@ header {
             background-color: $lightGrey;
             text-align: center;
             &.is-active {
-                @include flexCenter(center, column);
+                display: block;
                 opacity: 100%;
+                z-index: -1;
+                ul {
+                    @include flexCenter(space-around, column);
+                    height: 70%;
+                    margin-top: 30%;
+                    li {
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            border-bottom: 5em;
+                        }
+                        &:last-of-type::after {border: none;}
+                    }
+                }
             }
             ul {
                 padding-left: 0;

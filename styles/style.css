@@ -503,8 +503,8 @@ header .navigation nav {
   display: none;
   position: fixed;
   opacity: 0;
-  -webkit-transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -webkit-transition: opacity ease-in-out;
+  transition: opacity ease-in-out;
   top: 0;
   left: 0;
   right: 0;
@@ -516,12 +516,17 @@ header .navigation nav {
 }
 
 header .navigation nav.is-active {
+  display: block;
+  opacity: 100%;
+  z-index: -1;
+}
+
+header .navigation nav.is-active ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -531,7 +536,18 @@ header .navigation nav.is-active {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  opacity: 100%;
+  height: 70%;
+  margin-top: 30%;
+}
+
+header .navigation nav.is-active ul li::after {
+  content: "";
+  display: block;
+  border-bottom: 5em;
+}
+
+header .navigation nav.is-active ul li:last-of-type::after {
+  border: none;
 }
 
 header .navigation nav ul {
