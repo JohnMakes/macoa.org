@@ -24,9 +24,11 @@
             var nav = document.querySelector("nav");
             if(button.classList.contains("is-active")) {
                 button.classList.remove("is-active");
+                document.body.classList.toggle('lock-scroll');
             }
             else {
                 button.classList.add("is-active");
+                document.body.classList.toggle('lock-scroll');
             }
             if(nav.classList.contains("is-active")) {
                 nav.classList.remove("is-active");

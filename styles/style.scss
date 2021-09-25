@@ -11,6 +11,10 @@ body {
     padding-top: 15vh;
     box-sizing: border-box;
     font: $fontSerif;
+    &.lock-scroll {
+        overflow: hidden;
+        height: 100%;
+    }
 }
 ul {
     list-style: none;

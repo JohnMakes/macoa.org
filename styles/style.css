@@ -1937,6 +1937,11 @@ body {
   font: 16px ltc-goudy-oldstyle-pro, serif;
 }
 
+body.lock-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 ul {
   list-style: none;
   margin: 0;
