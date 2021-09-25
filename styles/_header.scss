@@ -39,15 +39,17 @@ header {
                 opacity: 100%;
                 z-index: -1;
                 ul {
-                    @include flexCenter(space-around, column);
-                    height: 70%;
-                    margin-top: 30%;
+                    @include flexCenter(space-evenly, column);
+                    height: 80vh;
+                    margin-top: 20vh;
                     li {
-
                         &::after {
                             content: "";
                             display: block;
-                            border-bottom: 5em;
+                            margin: 0 auto;
+                            width: 5em;
+                            margin-top: 0.25em;
+                            border-bottom: 0.08em solid $blueGrey;
                         }
                         &:last-of-type::after {border: none;}
                     }
